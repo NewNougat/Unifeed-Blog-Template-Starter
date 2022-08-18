@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --bold-font: 'Manrope', sans-serif;
+    --regular-font: 'Manrope', sans-serif;
+}
+
+body h1{
+    font-family: var(--bold-font);
+}
+
+body p{
+    font-family: var(--regular-font);
+    color: grey;
+}
+
+.first-container,
+.second-container{
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.nav-section{
+    display: none;
+}
+
+.main-pic img{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-description h1{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.pic img{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.user img{
+    max-width: 60px;
+    max-height: 60px;
+    margin-right: 20px;
+}
+
+.main-description .profile img{
+    max-width: 60px;
+    max-height: 60px;
+    margin-right: 20px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.username h1{
+    font-size: 20px;
+}
+
+.main-section .profile .username p{
+    font-size: small;
+}
+
+.username p{
+    font-size: small;
+}
+
+.section{
+    margin: 50px 0px;;
+}
+
+.description h1{
+    font-size: 50px;
+}
+
+.main-description, .description p{
+    margin-bottom: 20px;
+}
+
+.main-description ,
+.description p{
+    font-size: 25px;
+}
+
+.third-container{
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.logo2{
+    margin-bottom: 10px;
+}
+
+@media (min-width: 700px){
+    .hamburger{
+        display: none;
+    }
+
+    .nav-section{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links{
+        display: flex;
+        margin-right: 25px;
+        color: grey;
+        font-family: var(--regular-font);
+    }
+
+    .orange-bg{
+        background-color: rgb(255, 136, 0);
+        padding: 20px 30px;
+        text-decoration: none;
+        font-family: var(--regular-font);
+        color: black;
+        border-radius: 5px;
+        font-weight: bolder;
+    }
+
+    .main-description{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-section .main-user p{
+        font-size: small;
+    }
+
+    .main-description p{
+        font-size: 20px;
+        line-height: 2rem;
+    }
+    
+    .description p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .third-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:1200px ){
+
+    .main-pic{
+        max-width: 60em;
+    }
+
+    .main-pic img{
+        margin: 0%;
+    }
+
+    .main-section .main-user{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-section .profile {
+        margin: 0%;
+    }
+
+    .main-section{
+       display: flex;
+    }
+
+    .second-section{
+        max-height: 60em;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .main-description h1{
+        margin-bottom: 20px;
+    }
+
+    .main-description p{
+        font-size: 25px;
+        line-height: 2.5rem;
+    }
+
+    .second-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .description p{
+        font-size: 25px;
+    }
+}
